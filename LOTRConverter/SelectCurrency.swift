@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SelectCurrency: View {
+    @Binding var leftCurrency: Currency
+    @Binding var rightCurrency: Currency
+
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -23,32 +26,15 @@ struct SelectCurrency: View {
                     .multilineTextAlignment(.center)
                 
                 //Currency icons
-                ZStack{
-                    //Currency image
-                    Image("copperpenny")
-                        .resizable()
-                        .scaledToFit()
-                    
-                    //Currency text
-                    VStack {
-                        Spacer()
-                        Text("Copper Penny")
-                            .padding()
-                            .font(.caption)
-                            .background(.brown.opacity(0.75))
-                    }
-                    
-                }
-                .padding(3)
-                .frame(width: 100, height: 100)
-                .background(.brown)
-                .cornerRadius(25)
+                IconGrid(currency: $leftCurrency)
+                
                 
                 //Text
                 Text("Select the currency you would like to convert to: ")
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 //Currency icons
+                IconGrid(currency: $rightCurrency)
                 
                 //Done button
                 Button("Done"){
@@ -66,6 +52,6 @@ struct SelectCurrency: View {
 
 struct SelectCurrency_Previews: PreviewProvider {
     static var previews: some View {
-        SelectCurrency()
+        SelectCurrency(leftCurrency: .constant(.silverPiece), rightCurrency: .constant(.goldPiece))
     }
 }
