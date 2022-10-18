@@ -11,6 +11,7 @@
 		E666A54428FEA15500FF17B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E666A54328FEA15500FF17B6 /* ContentView.swift */; };
 		E666A54628FEA15700FF17B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E666A54528FEA15700FF17B6 /* Assets.xcassets */; };
 		E666A54928FEA15700FF17B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E666A54828FEA15700FF17B6 /* Preview Assets.xcassets */; };
+		E666A55028FEA21600FF17B6 /* exchangeinfo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E666A54F28FEA21600FF17B6 /* exchangeinfo.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E666A54328FEA15500FF17B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E666A54528FEA15700FF17B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E666A54828FEA15700FF17B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E666A54F28FEA21600FF17B6 /* exchangeinfo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = exchangeinfo.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		E666A54028FEA15500FF17B6 /* LOTRConverter */ = {
 			isa = PBXGroup;
 			children = (
+				E666A54F28FEA21600FF17B6 /* exchangeinfo.rtf */,
 				E666A54128FEA15500FF17B6 /* LOTRConverterApp.swift */,
 				E666A54328FEA15500FF17B6 /* ContentView.swift */,
 				E666A54528FEA15700FF17B6 /* Assets.xcassets */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E666A55028FEA21600FF17B6 /* exchangeinfo.rtf in Resources */,
 				E666A54928FEA15700FF17B6 /* Preview Assets.xcassets in Resources */,
 				E666A54628FEA15700FF17B6 /* Assets.xcassets in Resources */,
 			);
